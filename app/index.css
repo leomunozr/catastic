@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family:  sans-serif;
+}
+
+.main{
+  display: flex;
+  height: calc(100vh - 58px);;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  align-items: center;
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding: 20px 40px;
+  text-decoration: none;
+}
+
+nav a.active {
+  color: white;
+  background-color: black;
+}
+
+.principal {
+  align-content: center;
+  box-shadow: 0px 0px 10px 1px #ccc;
+  display: flex;
+  height: 600px;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
+  width: 600px;
+}
+
+.principal img {
+  width: 100%;
+  height: 100%;
+}
+
+.controles {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+}
+
+.controles span {
+  align-items: center;
+  background: white;
+  border-radius: 50%;
+  bottom: 45px;
+  box-shadow: 1px 1px 10px 1px #ccc;
+  cursor: pointer;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  margin: 0 15px;
+  position: relative;
+  width: 60px;
+}
+
+.favorites {
+  margin: 0 20px;
+}
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.favorite {
+  border: solid 1px black;
+  height: 300px;
+  margin: 5px;
+  position: relative;
+  width: 300px;
+}
+
+.favorite img {
+  height: 100%;
+  width: 100%;
+}
+
+.favorite span {
+  align-items: center;
+  background: red;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+}
+
+.loading {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+
+.loading img {
+  height: 80px;
+  width: 80px;
+}
